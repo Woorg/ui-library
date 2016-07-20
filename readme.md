@@ -1,5 +1,6 @@
-# CSSSR Project Template
-**Шаблон проекта для быстрого старта**
+Собрание ui элементов
+
+
 
 
 ## Старт проекта
@@ -221,4 +222,3 @@ npm run deploy
 }
 ```
 
-## [Внеси свой вклад в развитие проекта!](https://github.com/CSSSR/csssr-project-template/blob/master/contributing.md)
