@@ -1,0 +1,90 @@
+include /blocks/logo/logo
+include /blocks/buttons/buttons
+include /blocks/menu-justified/menu-justified
+include /blocks/menu-responsive/menu-responsive
+include /blocks/menu-offcanvas/menu-offcanvas
+include /blocks/tabs/tabs
+include /blocks/carousel-owl/carousel-owl
+
+
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Index page';
+
+block content
+	+e.in
+
+		+e.row
+			p Логотип
+
+			+logo
+
+		+e.row
+			p Кнопки
+
+			+buttons
+
+		+e.row
+			p Меню с одинаковой шириной
+
+			+menu-justified
+
+		+e.row
+			p Отзывчивое меню
+
+			+menu-responsive
+
+		+e.row
+			p Меню оффканвас
+
+			+menu-offcanvas
+
+		+e.row
+			p Табы
+
+			+tabs
+
+		+e.row
+			p Слайдер owlcarousel
+
+			+carousel-owl
+
+		+e.row
+			p Слайдер owlcarousel с тамбнэйлами
+
+
+		+e.row
+			p Слайдер bxslider с тамбнэйлами
+
+
+		+e.row
+			p Spinner
+
+
+		+e.row
+			p Range slider with price
+
+
+		+e.row
+			p Галерея
+
+
+		+e.row
+			p Верхний фильтр
+
+
+		+e.row
+			p Чекбоксы
+
+		+e.row
+			p Радиобаттоны
+
+		+e.row
+			p Файл загрузчик
+
+
+
+
+
+

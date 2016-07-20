@@ -1,0 +1,32 @@
+.buttons
+	&__w
+		font-size 0
+
+.button
+	padding 10px 10px
+	display inline-block
+	vertical-align top
+	min-height 20px
+	font-size 18px
+	text-decoration none
+	line-height 1
+	transition all .1s $ease-out-sine
+	&_default
+		padding 10px 10px
+		background $button-bg-light
+		color $button-text-dark
+		&:hover
+			background darken($button-bg-light, 20)
+	&_style-second
+		background $button-bg-big
+		color $button-text-big
+		&:hover
+			background darken($button-bg-big, 20)
+	&_style-third
+		background $button-bg-small
+		color $button-text-small
+		&:hover
+			background darken($button-bg-small, 20)
+
+
+

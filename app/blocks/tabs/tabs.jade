@@ -1,0 +1,17 @@
+mixin tabs()
+	+b.tabs&attributes(attributes)
+		+e.nav
+			+e('a').link._active(href='#tab-1') Навигация для таба
+			+e('a').link(href='#tab-2') Навигация для таба
+			+e('a').link(href='#tab-3') Навигация для таба
+			+e('a').link(href='#tab-4') Навигация для таба
+
+		+e.content
+			+e.tab._active#tab-1 TAB 1
+
+			+e.tab#tab-2 TAB 2
+
+			+e.tab#tab-3 TAB 3
+
+			+e.tab#tab-4 TAB 4
+

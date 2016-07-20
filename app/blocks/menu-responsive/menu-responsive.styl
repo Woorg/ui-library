@@ -1,0 +1,51 @@
+.menu-responsive
+	position relative
+	&__nav
+		font-size 0
+		clearfix()
+	&__button
+		position absolute
+		top 0
+		right 0
+		display none
+		font-size 18px
+		color #000
+		&_active
+			display inline-block
+		+below(768px)
+			display inline-block
+		&:hover
+			text-decoration none
+	&__list
+		text-align justify
+		clearfix()
+		+below(768px)
+			display none
+		&_active
+			display block
+	&__item
+		display inline-block
+		vertical-align top
+
+	&__link
+		padding 0 10px
+		display block
+		font-size 14px
+		color #000
+		&:hover
+			text-decoration none
+
+.submenu-responsive
+	display none
+	&__link
+		padding 20px
+		display block
+		font-size 14px
+		color #000
+		&:hover
+			text-decoration none
+
+.menu-responsive__item
+	&:hover
+		.submenu-responsive
+			display block

@@ -1,0 +1,70 @@
+.menu-offcanvas
+	position relative
+	&__nav
+		font-size 0
+		clearfix()
+	&__button
+		position absolute
+		top 0
+		right 0
+		display none
+		font-size 18px
+		color #000
+		display inline-block
+		&_active
+			display inline-block
+		+below(768px)
+			display inline-block
+		&:hover
+			text-decoration none
+	&__list
+		position absolute
+		top 20px
+		left -260px
+		width 260px
+		height 600px
+		transform translate(-260px, 0)
+		transition all .3s ease
+		clearfix()
+		&_active
+			visibility hidden
+	&__item
+		display inline-block
+		vertical-align top
+
+	&__link
+		padding 0 10px
+		display block
+		font-size 14px
+		color #000
+		&:hover
+			text-decoration none
+
+.submenu-offcanvas
+	display none
+
+	&__link
+		padding 20px
+		display block
+		font-size 14px
+		color #000
+		&:hover
+			text-decoration none
+
+.menu-offcanvas__item
+	&:hover
+		.submenu-offcanvas
+			display block
+
+
+.menu-offcanvas__list_active
+	position absolute
+	top 20px
+	left 0
+	width 260px
+	transform translate(0, 0)
+	visibility visible
+	.menu-offcanvas__item
+		float left
+		width 260px
+
