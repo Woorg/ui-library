@@ -55,7 +55,12 @@ export default function makeWebpackConfig({
 				test: /\.js$/,
 				loader: 'happypack/loader',
 				exclude: /node_modules/
-			}, {
+			},
+			{
+				test: /masonry-layout/,
+				loader: 'imports?define=>false&this=>window'
+			},
+			{
 				test: /\.json$/,
 				loader: 'json'
 			}, eslint && {

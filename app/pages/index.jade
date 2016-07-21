@@ -5,6 +5,8 @@ include /blocks/menu-responsive/menu-responsive
 include /blocks/menu-offcanvas/menu-offcanvas
 include /blocks/tabs/tabs
 include /blocks/carousel-owl/carousel-owl
+include /blocks/slider-bx/slider-bx
+include /blocks/spinner/spinner
 
 
 extends /blocks/layout-default/layout-default
@@ -51,17 +53,13 @@ block content
 			+carousel-owl
 
 		+e.row
-			p Слайдер owlcarousel с тамбнэйлами
+			p Слайдер bxslider
 
-
-		+e.row
-			p Слайдер bxslider с тамбнэйлами
-
-
+			+slider-bx
 		+e.row
 			p Spinner
 
-
+			+spinner
 		+e.row
 			p Range slider with price
 

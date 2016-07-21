@@ -1,0 +1,13 @@
+include /blocks/automaticgrid/automaticgrid
+
+
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Automatic grid';
+
+block content
+	+e.in
+		+e.row
+			+automaticgrid
+
