@@ -1,7 +1,16 @@
 mixin gallery(gallery)
 	+b('section').gallery&attributes(attributes)
+		+e('h1').section-title Галлерея
 		+e('ul').list
 			each item in gallery
-				+e('li').item
-					+e('a').link(href="#link") #{item[1]}
 
+				+e('li').item
+					+e('img').image(src=item.href)
+
+					+e.title #{item.value}
+
+				if item.value == "Описание 3"
+					+e('li').item._active
+						+e('img').image(src=item.href)
+
+						+e.title #{item.value}
