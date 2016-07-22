@@ -1,0 +1,16 @@
+mixin range-slider()
+	+b.range-slider&attributes(attributes)
+
+		+e.slider
+
+		+e.price-w
+			+e.price-from <span>299</span> руб.
+			+e.price-to <span>15 999</span> руб.
+
+		+e.input-w
+			+e.input-from
+				+e('label').label(for='price-from') Цена от:
+				+e('input').input(id='price-from' type='text' value='' name='')
+			+e.input-to
+				+e('label').label(for='price-to') До:
+				+e('input').input(id='price-to' type='text' value='' name='')

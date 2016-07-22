@@ -1,0 +1,7 @@
+mixin gallery(gallery)
+	+b('section').gallery&attributes(attributes)
+		+e('ul').list
+			each item in gallery
+				+e('li').item
+					+e('a').link(href="#link") #{item[1]}
+
